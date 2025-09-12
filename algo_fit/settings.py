@@ -3,7 +3,9 @@ from datetime import timedelta
 from decouple import config
 from datetime import timedelta
 from decouple import config
-
+import cloudinary
+import cloudinary.uploader
+from cloudinary.utils import cloudinary_url
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -36,10 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "debug_toolbar",
+    "corsheaders",
     "drf_yasg",
     "rest_framework",
     "rest_framework.authtoken",
-    "corsheaders",
     "djoser",
     "accounts",
     "gym",
@@ -145,7 +147,6 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / "staticfiles"
-# STATIC_FILES_DIR = BASE_DIR / 'static'
 STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 
 MEDIA_URL = '/media/'
