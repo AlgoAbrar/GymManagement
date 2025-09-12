@@ -1,15 +1,5 @@
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.sqlite3
 db.sqlite3
-
-venv/
+.algofit_env
 .env
-
-staticfiles/
-media/
-
-.vscode/
-.idea/
+token.json
