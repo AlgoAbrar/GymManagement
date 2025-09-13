@@ -24,7 +24,8 @@ ALLOWED_HOSTS = ['localhost','127.0.0.1','.vercel.app']
 AUTH_USER_MODEL = "accounts.User"
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173"
+    "http://localhost:5173",
+    "https://gym-frontend-sandy.vercel.app"
 ]
 
 # Application definition
